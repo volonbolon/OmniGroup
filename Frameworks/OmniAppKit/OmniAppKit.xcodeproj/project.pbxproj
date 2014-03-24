@@ -2690,7 +2690,8 @@
 		00E51EF1FE8AB2E911C9CC38 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = 4A4E085608AA75E90098FF0F /* Build configuration list for PBXProject "OmniAppKit" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -3267,6 +3268,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4AB8F09C08AD0A0600DBB061 /* Omni-Global-Debug.xcconfig */;
 			buildSettings = {
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -3274,6 +3278,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4AB8F09D08AD0A0600DBB061 /* Omni-Global-Release.xcconfig */;
 			buildSettings = {
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 			};
 			name = Release;
 		};
@@ -3281,6 +3287,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4AB8F09B08AD0A0600DBB061 /* Omni-Global-Coverage.xcconfig */;
 			buildSettings = {
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 			};
 			name = Coverage;
 		};
@@ -3288,6 +3296,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4AA1EBD108AA772700E2FF6B /* Omni-Framework-Debug.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Info.plist;
 				OMNI_BUNDLE_IDENTIFIER = com.omnigroup.OmniAppKit;
 				PRODUCT_NAME = OmniAppKit;
@@ -3304,6 +3313,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4AA1EBD208AA772700E2FF6B /* Omni-Framework-Release.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Info.plist;
 				OMNI_BUNDLE_IDENTIFIER = com.omnigroup.OmniAppKit;
 				PRODUCT_NAME = OmniAppKit;
@@ -3320,6 +3330,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4AA1EBD008AA772700E2FF6B /* Omni-Framework-Coverage.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Info.plist;
 				OMNI_BUNDLE_IDENTIFIER = com.omnigroup.OmniAppKit;
 				PRODUCT_NAME = OmniAppKit;
@@ -3336,6 +3347,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4AB8F09908AD0A0600DBB061 /* Omni-Bundle-Debug.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
@@ -3353,6 +3365,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4AB8F09A08AD0A0600DBB061 /* Omni-Bundle-Release.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
@@ -3370,6 +3383,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4AB8F09808AD0A0600DBB061 /* Omni-Bundle-Coverage.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
@@ -3411,6 +3425,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4AB8F09908AD0A0600DBB061 /* Omni-Bundle-Debug.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Info-OAPatternColorPicker.plist";
 				PRODUCT_NAME = OAPatternColorPicker;
 			};
@@ -3420,6 +3435,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4AB8F09A08AD0A0600DBB061 /* Omni-Bundle-Release.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Info-OAPatternColorPicker.plist";
 				PRODUCT_NAME = OAPatternColorPicker;
 			};
@@ -3429,6 +3445,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4AB8F09808AD0A0600DBB061 /* Omni-Bundle-Coverage.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Info-OAPatternColorPicker.plist";
 				PRODUCT_NAME = OAPatternColorPicker;
 			};

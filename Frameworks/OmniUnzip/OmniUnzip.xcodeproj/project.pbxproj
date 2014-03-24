@@ -474,7 +474,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "OmniUnzip" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -580,6 +580,7 @@
 			baseConfigurationReference = 424183B50F44CF990029B4DA /* Omni-Framework-Debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OmniUnzip_Prefix.pch;
 				GCC_WARN_SHADOW = YES;
@@ -601,6 +602,7 @@
 			baseConfigurationReference = 424183B60F44CF990029B4DA /* Omni-Framework-Release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OmniUnzip_Prefix.pch;
 				GCC_WARN_SHADOW = YES;
@@ -619,6 +621,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 424183BC0F44CF990029B4DA /* Omni-Global-Debug.xcconfig */;
 			buildSettings = {
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -626,6 +631,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 424183BD0F44CF990029B4DA /* Omni-Global-Release.xcconfig */;
 			buildSettings = {
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 			};
 			name = Release;
 		};
@@ -663,6 +670,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 424183BB0F44CF990029B4DA /* Omni-Global-Coverage.xcconfig */;
 			buildSettings = {
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 			};
 			name = Coverage;
 		};
@@ -671,6 +680,7 @@
 			baseConfigurationReference = 424183B40F44CF990029B4DA /* Omni-Framework-Coverage.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = OmniUnzip_Prefix.pch;
 				GCC_WARN_SHADOW = YES;

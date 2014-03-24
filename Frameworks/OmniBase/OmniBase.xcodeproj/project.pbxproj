@@ -571,7 +571,8 @@
 		00E51C1BFE8AAE2511C9CC38 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = 4AA3CEDC08A01555004389CD /* Build configuration list for PBXProject "OmniBase" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -818,6 +819,7 @@
 			baseConfigurationReference = 4AB8F0E908AD0B7000DBB061 /* Omni-Bundle-Debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_DIR)/Library/Frameworks",
 					"$(value)",
@@ -834,6 +836,7 @@
 			baseConfigurationReference = 4AB8F0EA08AD0B7000DBB061 /* Omni-Bundle-Release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_DIR)/Library/Frameworks",
 					"$(value)",
@@ -850,6 +853,7 @@
 			baseConfigurationReference = 4AB8F0E808AD0B7000DBB061 /* Omni-Bundle-Coverage.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_DIR)/Library/Frameworks",
 					"$(value)",
@@ -866,6 +870,7 @@
 			baseConfigurationReference = 4AAFAE1908A0216200E04045 /* Omni-Framework-Debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "";
 				OMNI_BUNDLE_IDENTIFIER = com.omnigroup.framework.OmniBase;
@@ -884,6 +889,7 @@
 			baseConfigurationReference = 4AAFAE1A08A0216200E04045 /* Omni-Framework-Release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Info.plist;
 				OMNI_BUNDLE_IDENTIFIER = com.omnigroup.framework.OmniBase;
 				PRODUCT_NAME = OmniBase;
@@ -901,6 +907,7 @@
 			baseConfigurationReference = 4AAFAE1808A0216200E04045 /* Omni-Framework-Coverage.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Info.plist;
 				OMNI_BUNDLE_IDENTIFIER = com.omnigroup.framework.OmniBase;
 				PRODUCT_NAME = OmniBase;
@@ -917,6 +924,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4AB8F0EC08AD0B7000DBB061 /* Omni-Global-Debug.xcconfig */;
 			buildSettings = {
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -924,6 +934,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4AB8F0ED08AD0B7000DBB061 /* Omni-Global-Release.xcconfig */;
 			buildSettings = {
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 			};
 			name = Release;
 		};
@@ -935,6 +947,8 @@
 					COVERAGE,
 					OMNI_ASSERTIONS_ON,
 				);
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 			};
 			name = Coverage;
 		};

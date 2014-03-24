@@ -1823,7 +1823,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "OmniUI" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2052,6 +2052,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 346C49FF119326AD00BE8C49 /* Omni-Global-Debug.xcconfig */;
 			buildSettings = {
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -2059,6 +2062,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 346C4A00119326AD00BE8C49 /* Omni-Global-Release.xcconfig */;
 			buildSettings = {
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 			};
 			name = Release;
 		};

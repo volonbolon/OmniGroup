@@ -1020,9 +1020,7 @@ tryAgain:
 
 - (NSString *)debugName;
 {
-    OFXAccountAgent *accountAgent = _weak_accountAgent;
-    OBASSERT(accountAgent);
-    return accountAgent.debugName;
+    return _debugName;
 }
 
 #pragma mark - Private

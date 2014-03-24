@@ -599,7 +599,8 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "OmniDAV" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -803,6 +804,7 @@
 			baseConfigurationReference = 3421AE8C0F71F89C0096AADB /* Omni-Framework-Debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Info.plist;
 				OMNI_BUNDLE_IDENTIFIER = com.omnigroup.framework.OmniDAV;
 				PRODUCT_NAME = OmniDAV;
@@ -815,6 +817,7 @@
 			baseConfigurationReference = 3421AE8D0F71F89C0096AADB /* Omni-Framework-Release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Info.plist;
 				OMNI_BUNDLE_IDENTIFIER = com.omnigroup.framework.OmniDAV;
 				PRODUCT_NAME = OmniDAV;
@@ -831,6 +834,9 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -843,6 +849,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 			};
 			name = Release;
 		};
@@ -916,6 +924,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 			};
 			name = Coverage;
 		};
@@ -924,6 +934,7 @@
 			baseConfigurationReference = 3421AE8B0F71F89C0096AADB /* Omni-Framework-Coverage.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Info.plist;
 				OMNI_BUNDLE_IDENTIFIER = com.omnigroup.framework.OmniDAV;
 				PRODUCT_NAME = OmniDAV;
@@ -936,6 +947,7 @@
 			baseConfigurationReference = 3421AE880F71F89C0096AADB /* Omni-Bundle-Debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PREFIX_HEADER = "Test/ODAVUnitTests/ODAVUnitTests-Prefix.pch";
 				INFOPLIST_FILE = "Test/ODAVUnitTests/ODAVUnitTests-Info.plist";
@@ -950,6 +962,7 @@
 			baseConfigurationReference = 3421AE890F71F89C0096AADB /* Omni-Bundle-Release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PREFIX_HEADER = "Test/ODAVUnitTests/ODAVUnitTests-Prefix.pch";
 				INFOPLIST_FILE = "Test/ODAVUnitTests/ODAVUnitTests-Info.plist";
@@ -964,6 +977,7 @@
 			baseConfigurationReference = 3421AE870F71F89C0096AADB /* Omni-Bundle-Coverage.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PREFIX_HEADER = "Test/ODAVUnitTests/ODAVUnitTests-Prefix.pch";
 				INFOPLIST_FILE = "Test/ODAVUnitTests/ODAVUnitTests-Info.plist";

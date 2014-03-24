@@ -13,7 +13,7 @@
 
 @interface OUIDocumentNavigationItem : UINavigationItem
 
-@property (nonatomic, readonly) OUIDocument *document;
+@property (nonatomic, weak, readonly) OUIDocument *document;
 
 - (instancetype)initWithDocument:(OUIDocument *)document;
 

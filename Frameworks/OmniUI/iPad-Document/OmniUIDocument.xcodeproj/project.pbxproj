@@ -1048,7 +1048,7 @@
 		342F48B8167799AC007C5FFB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "The Omni Group";
 			};
 			buildConfigurationList = 342F48BB167799AC007C5FFB /* Build configuration list for PBXProject "OmniUIDocument" */;
@@ -1149,6 +1149,9 @@
 			baseConfigurationReference = 342F48F316779A46007C5FFB /* Omni-Global-Debug.xcconfig */;
 			buildSettings = {
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -1156,6 +1159,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 342F48F416779A46007C5FFB /* Omni-Global-Release.xcconfig */;
 			buildSettings = {
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 			};
 			name = Release;
 		};

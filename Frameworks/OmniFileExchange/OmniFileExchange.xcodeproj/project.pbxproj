@@ -1046,7 +1046,8 @@
 		34AFACD8164B0E70009E39AB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "The Omni Group";
 			};
 			buildConfigurationList = 34AFACDB164B0E70009E39AB /* Build configuration list for PBXProject "OmniFileExchange" */;
@@ -1310,6 +1311,9 @@
 			baseConfigurationReference = 34AFAD11164B0E8C009E39AB /* Omni-Global-Debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -1318,6 +1322,8 @@
 			baseConfigurationReference = 34AFAD12164B0E8C009E39AB /* Omni-Global-Release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 			};
 			name = Release;
 		};
@@ -1325,6 +1331,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 34AFAD09164B0E8C009E39AB /* Omni-Framework-Debug.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "OmniFileExchange-Info.plist";
 				OMNI_BUNDLE_IDENTIFIER = com.omnigroup.framework.OmniFileExchange;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1335,6 +1342,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 34AFAD0A164B0E8C009E39AB /* Omni-Framework-Release.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "OmniFileExchange-Info.plist";
 				OMNI_BUNDLE_IDENTIFIER = com.omnigroup.framework.OmniFileExchange;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1361,6 +1369,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 34AFAD05164B0E8C009E39AB /* Omni-Bundle-Debug.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Test/OFXUnitTests/OFXUnitTests-Prefix.pch";
@@ -1383,6 +1392,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 34AFAD06164B0E8C009E39AB /* Omni-Bundle-Release.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Test/OFXUnitTests/OFXUnitTests-Prefix.pch";
